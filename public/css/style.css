@@ -213,6 +213,66 @@ img {
     font-size: var(--font-size-small);
 }
 
+/* SearchBar */
+.searchBar {
+    visibility: hidden;
+    transform: translateY(-100px);
+    background-color: var(--black);
+    padding: 4px 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.searchBar.open {
+    transform: translateY(0);
+    transition: transform 0.1s;
+}
+
+.searchBar input {
+    padding: 0;
+    margin: 0;
+}
+
+#searchClose {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px;
+    color: var(--gray-light)
+}
+
+/* Dashboard Admin */
+.admin-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin-post-controls {
+display: inline-block;
+}
+
+.admin-post-controls .btn {
+    display: inline-block;
+    background-color: var(--black);
+    color: var(--gray-light);
+    border: 0;
+    font-size: 0.8rem;
+    padding: 4px 8px;
+    line-height: 2;
+}
+
+.admin-posts {
+    padding: 0;
+    margin: 0;
+}
+
+.admin-posts li {
+    display: flex;
+    justify-content: space-between;
+    padding-block: 10px;
+}
 
 /* Mobile */
 @media only screen and (min-width: 768px) {
